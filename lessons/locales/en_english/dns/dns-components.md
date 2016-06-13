@@ -45,14 +45,6 @@ localhost       A       127.0.0.1
 
 mail            A       1.2.3.4
 www             A       2.3.4.5
-        
-land-5.com.     A       206.6.177.2
-ns              A       206.6.177.3
-www             A       207.159.141.192
-
-ftp             CNAME   land-5.com.
-mail            CNAME   land-5.com.
-news            CNAME   land-5.com.
 </pre>
 
 
