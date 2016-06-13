@@ -27,6 +27,35 @@ A zone file is comprised of entries of resource records. Each line is a record a
 patty    IN  A      192.168.0.4 
 </pre>
 
+<b>Sample Zone file</b>
+<pre>
+$TTL 3D
+@       IN      SOA     example.com. root.example.com.com. (
+                        199609206       ; serial, todays date + todays serial #
+                        8H              ; refresh, seconds
+                        2H              ; retry, seconds
+                        4W              ; expire, seconds
+                        1D )            ; minimum, seconds
+                NS      ns1.example.com.
+                NS      ns2.example.com.
+                MX      10 mail.example.com.  ; Primary Mail Exchanger
+                TXT     "LAND-5 Corporation"
+
+localhost       A       127.0.0.1
+
+mail            A       1.2.3.4
+www             A       2.3.4.5
+        
+land-5.com.     A       206.6.177.2
+ns              A       206.6.177.3
+www             A       207.159.141.192
+
+ftp             CNAME   land-5.com.
+mail            CNAME   land-5.com.
+news            CNAME   land-5.com.
+</pre>
+
+
 ## Exercise
 
 No exercises for this lesson.
